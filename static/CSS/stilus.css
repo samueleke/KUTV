@@ -1,0 +1,238 @@
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  /* margin: 0;
+    padding: 0; */
+}
+
+/* Navigation */
+.navbar {
+  font-family: "Montserrat";
+  align-items: center;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+.navbar-brand {
+  margin: 0 10px 0 10px;
+}
+
+/* Welcoming Page */
+
+#title {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.img-div {
+  background-image: url(https://tqconsulting.hu/wp-content/uploads/2019/01/kockazatertekeles.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.container-fluid {
+  padding: 2% 0;
+}
+
+.big-heading {
+  font-family: "Montserrat-Black", sans-serif;
+  size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+  color: black;
+  margin: 2%;
+}
+
+.heading-content {
+  background-color: lightgrey;
+  opacity: 0.8;
+  padding: 7% 0;
+}
+
+.heading-text {
+  color: black;
+  font-weight: 450;
+  font-size: 1.225rem;
+  margin: 2%;
+}
+
+.btn {
+  margin: 0 2%;
+}
+
+/* Main */
+
+/* #main {
+  height: 100vh;
+} */
+/* .row{
+    padding: 2%;
+} */
+
+.main-content-text {
+  margin: 2rem 0;
+  /* border: solid black 3px; */
+  position: relative;
+  padding: 1rem;
+  background-color: lightgray;
+  opacity: 0.9;
+  border-radius: 10px;
+
+}
+
+.main-h1 {
+  font-weight: 700;
+}
+
+.right-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  z-index: 1;
+}
+
+/* Google Map */
+#google-map {
+  margin: 2rem 0;
+}
+
+#map {
+  height: 300px;
+  width: 100%;
+}
+
+.map-col {
+  background-color: lightgray;
+  border-radius: 10px;
+  padding: 1rem 0;
+}
+
+.kuldes-btn:hover {
+  outline: none;
+  color: black;
+  background-color: white;
+  border: solid black;
+}
+
+/* .message-container{
+  border: solid black 2px;
+  border-radius: 10px;
+} */
+
+
+/* Count Down */
+#comming-soon {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vh;
+}
+
+.count-down {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+
+}
+
+.countdown-container {
+  /* border: black 2px; */
+  border-radius: 10px;
+  background-color: lightgray;
+  padding: 1rem;
+  width: 80%;
+
+  justify-content: space-around;
+}
+
+.countdown-background-img {
+  /* background-image: url(/Kepek/backgroundcountdown.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); */
+
+}
+
+.space-between-rows {
+  margin: 2rem 0
+}
+
+/* Sponsors */
+
+#sponsor {
+  padding: 3rem 0 0 0;
+
+}
+
+.sponsors-container {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.8;
+}
+
+.sponsor-header, .count-down-header, .day, .hour, .minute, .second, .count-down-day, .count-down-hour, .count-down-minute, .count-down-second {
+  text-align: center;
+}
+
+.count-down-day, .count-down-hour, .count-down-minute, .count-down-second {
+  font-size: 2rem;
+}
+
+.day, .hour, .minute, .second {
+  font-size: 1.255rem;
+}
+
+/* Footer */
+
+.footer {
+  font-family: "Montserrat";
+  font-weight: 500;
+  text-align: center;
+  position: sticky;
+  top: 100%;
+}
+
+/* .footer-links {
+} */
+
+.btn {
+  font-weight: 550;
+}
+
+.author {
+  color: #fff;
+  font-size: small;
+  gap: 0;
+}
+
+.profile-link:hover {
+  outline: none;
+  background-color: #fff;
+  color: black;
+}
+
+.profile-link {
+  color: #fff;
+  align-items: center;
+}

@@ -1,0 +1,23 @@
+#rules{
+    padding: 4rem;
+}
+
+
+.rules-container{
+    /* border: solid balck 2px; */
+    position: relative;
+    height: auto;
+    width: 50%;
+    border-radius: 10px;
+    border: 2px solid #212529;
+    background-color: lightgrey;
+    padding: 0 1rem 1rem;
+}
+
+.rules-heading{
+    justify-content: center;
+}
+
+.row{
+    margin-top: 1.225rem;
+}

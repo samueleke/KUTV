@@ -1,0 +1,21 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "University project. Building a website about KUTV. The original website can be found at: https://hu.econ.ubbcluj.ro/kutv/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eke Samuel",
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {
+    "auto-bind": "^5.0.1",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.16",
+    "path": "^0.12.7"
+  }
+}

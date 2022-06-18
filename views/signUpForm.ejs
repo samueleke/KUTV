@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jelentkezes</title>
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;900&display=swap"
+    rel="stylesheet" />
+
+
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- <script src="/path/to//js/form-to-json.js"></script> -->
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/57ff89206e.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <!-- My CSS -->
+  <link rel="stylesheet" href="/CSS/signUpForm.css" />
+  <link rel="stylesheet" href="/CSS/stilus.css" />
+  <link rel="stylesheet" href="/CSS/signUpForm.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">
+      <img src="/Kepek/fsega.png" alt="" width="150" style="max-width: 100%" />
+      KÜTV</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Kezdőoldal</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="">Hírek</a>
+        </li> -->
+
+        <li class="nav-item">
+          <a class="nav-link" href="versenySzabalyzat.html">Versenyszabályzat</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="altalanosInformaciok.html">Általános információk</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <br><br>
+
+  <!-- Form beginning-->
+  <main id="main">
+    <div class="container">
+      <div class="form-title">Jelentkezés!</div>
+      <form action="/formsubmit" method="POST" class="row form" id="form">
+        <span>Első versenyző</span>
+        <hr>
+        <div class="row">
+          <div class="col-md-6 ">
+            <label class="form-label" name="csname">Név</label><br />
+            <input class="form-control" type="text" id="csname" name="csname" placeholder="Családnév" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label visibility-hidden" for="kname">" "</label><br />
+            <input class="form-control" type="text" id="kname" name="kname" placeholder="Keresztnév" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <label class="form-label" for="email">E-mail</label><br>
+            <input class="form-control" type="email" name="email" id="email" placeholder="pl: nev@pelda.com">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label" for="telefonszam">Telefonszám</label><br>
+            <input class="form-control" type="tel" name="telefonszam" id="telefonszam" placeholder="+40 1234 5678">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <label for="city" class="form-label">Cim</label>
+            <input type="text" class="form-control" name="city" id="city" placeholder="Város">
+
+          </div>
+          <div class="col-sm">
+            <label for="county" class="form-label visibility-hidden">""</label>
+            <input type="text" class="form-control" name="county" id="county" placeholder="Megye">
+          </div>
+          <div class="col-sm">
+            <label for="post_code" class="form-label visibility-hidden">" "</label>
+            <input type="text" class="form-control" name="post_code" id="post_code" placeholder="Irányítószám">
+          </div>
+
+        </div>
+
+        <div class="row justify-content-start">
+          <div class="col-sm-6">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="radio" id="flexSwitchCheckDefault" name="csapatkapitany">
+              <label class="form-check-label" for="flexSwitchCheckDefault">Csapatkapitány</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md">
+            <span>Osztály:</span>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input osztaly" type="checkbox" id="inlineCheckbox1" value="X" name="group"
+                onclick="selectOnlyThis(this.id,'osztaly')">
+              <label class="form-check-label" for="inlineCheckbox1">X</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input osztaly" type="checkbox" id="inlineCheckbox2" value="XI" name="group"
+                onclick="selectOnlyThis(this.id,'osztaly')">
+              <label class="form-check-label" for="inlineCheckbox2">XI</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input osztaly" type="checkbox" id="inlineCheckbox3" value="XII" name="group"
+                onclick="selectOnlyThis(this.id,'osztaly')">
+              <label class="form-check-label" for="inlineCheckbox3">XII</label>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <span>Nemed:</span>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input nem" type="checkbox" id="inlineCheckboxx1" value="ferfi" name="nem"
+                onclick="selectOnlyThis(this.id,'nem')">
+              <label class="form-check-label" for="inlineCheckbox1">Férfi</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input nem" type="checkbox" id="inlineCheckboxx2" value="no" name="nem"
+                onclick="selectOnlyThis(this.id,'nem')">
+              <label class="form-check-label" for="inlineCheckbox2">Nő</label>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+        <div class="col">
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">Iskola</label>
+            <select class="form-select" id="inputGroupSelect01" name="IskolaNev"> 
+              <% schools.forEach((school)=>{ %>
+                <option value="<%= school.IskolaID%>">
+                  <%= school.IskolaNev%>
+                </option>
+
+                <% }) %>
+            </select>
+          </div>
+        </div>
+
+
+        <!-- 
+      <div class="d-flex justify-content-center"> -->
+        <input type="submit" value="Kész" class="btn btn-dark" />
+        <!-- </div> -->
+
+      </form>
+    </div>
+
+  </main>
+
+  <br><br>
+
+
+
+  <!-- Back to top button -->
+  <button type="button" class="btn btn-dark btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fa-solid fa-circle-arrow-up"></i>
+  </button>
+  <script src="/JS/signUpForm.js"></script>
+  <script src="/JS/backToTopButton.js"></script>
+</body>
+
+</html>
